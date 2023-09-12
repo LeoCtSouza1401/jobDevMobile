@@ -43,28 +43,27 @@ const App = () => {
                         </Text>
                     </TouchableOpacity>
                 </View>
-                <View>
-                        <TouchableOpacity style={styles.button}>
-                            <Text style={styles.buttonText}>
-                                Entrar
-                            </Text>
-                        </TouchableOpacity>
-                    </View>
-                    <View style={styles.signUpArea}>
-                        <Text style={styles.signUptext}>
-                            Não tem uma conta?
+                <TouchableOpacity style={styles.button}>
+                    <Text style={styles.buttonText}>
+                        Entrar
+                    </Text>
+                </TouchableOpacity>
+                <View style={styles.signUpArea}>
+                    <Text style={styles.signUptext}>
+                        Não tem uma conta?
+                    </Text>
+                    <TouchableOpacity>
+                        <Text style={styles.signUpBtnText}>
+                            Cadastre-se
                         </Text>
-                        <TouchableOpacity>
-                            <Text style={styles.signUpBtnText}>
-                                Cadastre-se
-                            </Text>
-                        </TouchableOpacity>
-                    </View>
-                    <View style={styles.footerArea}>
-                        <Text style={styles.footertext}>
-                            Criado por Leonardo
-                        </Text>
-                    </View>
+                    </TouchableOpacity>
+                </View>
+                <View style={styles.footerArea}>
+                    <Text style={styles.footertext}>
+                        Criado por Leonardo
+                    </Text>
+                </View>
+                
             </View>
         </ScrollView>
     );

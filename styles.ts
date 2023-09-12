@@ -54,13 +54,36 @@ export const styles = StyleSheet.create({
         color:'#416287',
     },
     button: {
-        backgroundColor:'416287',
+        backgroundColor:'#416287',
         width:'100%',
+        padding:10,
+        borderRadius:5,
     },
-    buttonText: {},
-    signUpArea: {},
-    signUptext: {},
-    signUpBtnText: {},
-    footerArea: {},
-    footertext: {}
+    buttonText: {
+        fontSize:16,
+        alignSelf:'center',
+        color:"white",
+    },
+    signUpArea: {
+        flexDirection:'row',
+        marginTop:30,
+    },
+    signUptext: {
+        fontSize:13,
+        fontWeight:'bold',
+        color: '#999',
+    },
+    signUpBtnText: {
+        fontSize:13,
+        fontWeight:'bold',
+        color:'#416287',
+        marginLeft:5,
+    },
+    footerArea: {
+        marginVertical:30,
+    },
+    footertext: {
+        fontSize:13,
+        color:'#999'
+    }
 })
