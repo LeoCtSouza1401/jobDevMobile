@@ -1,25 +1,54 @@
-import {StyleSheet} from 'react-native'
+import { StyleSheet } from 'react-native'
 
 export const styles = StyleSheet.create({
-    scrollView:{},
-    container:{},
-    logo:{
-        width:150,
-        height:150
+    scrollView: {
+        backgroundColor: '#fff',
+        paddingHorizontal: 15,
+        paddingTop: 40,
     },
-    h1:{},
-    h2:{},
-    inputArea:{},
-    inputLabel:{},
-    inputField:{},
-    aditionals:{},
-    forgotBtnArea:{},
-    forgotBtnText:{},
-    button:{},
-    buttonText:{},
-    signUpArea:{},
-    signUptext:{},
-    signUpBtnText:{},
-    footerArea:{},
-    footertext:{}    
+    container: {
+        alignItems: 'center',
+    },
+    logo: {
+        width: 150,
+        height: 150
+    },
+    h1: {
+        fontSize: 28,
+        color: '#000',
+        fontWeight: 'bold',
+        marginVertical: 10,
+
+    },
+    h2: {
+        color: '#999',
+        fontSize: 15,
+    },
+    inputArea: {
+        width: '100%',
+        paddingTop: 20,
+    },
+    inputLabel: {
+        color:'#777',
+        fontSize: 16,
+        fontWeight:'bold',
+        marginBottom:7,
+    },
+    inputField: {
+        borderWidth:2,
+        borderRadius:5,
+        borderColor:'#ddd',
+        fontSize:15,
+        padding:10,
+    },
+    aditionals: {},
+    forgotBtnArea: {},
+    forgotBtnText: {},
+    button: {},
+    buttonText: {},
+    signUpArea: {},
+    signUptext: {},
+    signUpBtnText: {},
+    footerArea: {},
+    footertext: {}
 })
