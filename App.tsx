@@ -5,9 +5,11 @@ import{styles} from './styles'
 const App = () => {
   return (
     <ScrollView style={styles.scrollView}>
-      <view style={styles.container}>
+      <View style={styles.container}>
       <Image source={require('./assets/logo.png')} style={styles.logo}/>
-      </view>
+      <Text style={styles.h1}> Tela de login </Text>
+      <Text style={styles.h2}> Bem Vindo(a)! Digite seus dados abaixo.</Text>
+      </View>
     </ScrollView>
   );
 }
