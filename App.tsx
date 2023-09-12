@@ -1,4 +1,5 @@
-import React from "react";
+
+import React,{useState} from "react";
 import {
     ScrollView,
     View,
@@ -63,7 +64,7 @@ const App = () => {
                         Criado por Leonardo
                     </Text>
                 </View>
-                
+
             </View>
         </ScrollView>
     );
