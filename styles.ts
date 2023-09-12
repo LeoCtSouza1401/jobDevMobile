@@ -41,10 +41,22 @@ export const styles = StyleSheet.create({
         fontSize:15,
         padding:10,
     },
-    aditionals: {},
-    forgotBtnArea: {},
-    forgotBtnText: {},
-    button: {},
+    aditionals: {
+        width:'100%',
+    },
+    forgotBtnArea: {
+        paddingVertical:20,
+        alignSelf:'flex-end',
+    },
+    forgotBtnText: {
+        fontSize:15,
+        fontWeight:'bold',
+        color:'#416287',
+    },
+    button: {
+        backgroundColor:'416287',
+        width:'100%',
+    },
     buttonText: {},
     signUpArea: {},
     signUptext: {},
