@@ -4,8 +4,10 @@ import{styles} from './styles'
 
 const App = () => {
   return (
-    <ScrollView style={styles.ScrollView}>
-
+    <ScrollView style={styles.scrollView}>
+      <view style={styles.container}>
+      <Image source={require('./assets/logo.png')} style={styles.logo}/>
+      </view>
     </ScrollView>
   );
 }
