@@ -60,7 +60,7 @@ const App = () => {
                             </Text>
                         </TouchableOpacity>
                     </View>
-                    <View style={styles.footerAres}>
+                    <View style={styles.footerArea}>
                         <Text style={styles.footertext}>
                             Criado por Leonardo
                         </Text>
