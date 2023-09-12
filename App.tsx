@@ -1,5 +1,5 @@
 
-import React,{useState} from "react";
+import React, { useState } from "react";
 import {
     ScrollView,
     View,
@@ -13,18 +13,17 @@ import { styles } from './styles'
 
 const App = () => {
     const [emailField, setEmailField] = useState<string>('')
-    const [passwordField, setPasswordField] =useState<string>('')
-
-    const handleForgetButton = () =>{
+    const [passwordField, setPasswordField] = useState<string>('')
+    const handleForgetButton = () => {
 
     }
 
-    const handleLoginButton = () =>{
+    const handleLoginButton = () => {
         alert(emailField)
         alert(passwordField)
     }
 
-    const handleSignUpButton = () =>{
+    const handleSignUpButton = () => {
 
     }
 
@@ -58,7 +57,7 @@ const App = () => {
                         placeholderTextColor="#999"
                         secureTextEntry
                         value={passwordField}
-                        onChangeText={(text) =>{setPasswordField(text)}}
+                        onChangeText={(text) => { setPasswordField(text) }}
                     />
                 </View>
                 <View style={styles.aditionals}>
