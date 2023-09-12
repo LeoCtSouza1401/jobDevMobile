@@ -4,7 +4,9 @@ import{styles} from './styles'
 
 const App = () => {
   return (
-    
+    <ScrollView style={styles.ScrollView}>
+
+    </ScrollView>
   );
 }
 
