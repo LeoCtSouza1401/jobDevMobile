@@ -16,12 +16,16 @@ const App = () => {
     const [passwordField, setPasswordField] =useState<string>('')
 
     const handleForgetButton = () =>{
-        
+
     }
 
     const handleLoginButton = () =>{
         alert(emailField)
         alert(passwordField)
+    }
+
+    const handleSignUpButton = () =>{
+
     }
 
     return (
@@ -73,7 +77,7 @@ const App = () => {
                     <Text style={styles.signUptext}>
                         Não tem uma conta?
                     </Text>
-                    <TouchableOpacity>
+                    <TouchableOpacity onPress={handleSignUpButton}>
                         <Text style={styles.signUpBtnText}>
                             Cadastre-se
                         </Text>
