@@ -14,6 +14,16 @@ import { styles } from './styles'
 const App = () => {
     const [emailField, setEmailField] = useState<string>('')
     const [passwordField, setPasswordField] =useState<string>('')
+
+    const handleForgetButton = () =>{
+        
+    }
+
+    const handleLoginButton = () =>{
+        alert(emailField)
+        alert(passwordField)
+    }
+
     return (
         <ScrollView style={styles.scrollView}>
             <View style={styles.container}>
@@ -48,13 +58,13 @@ const App = () => {
                     />
                 </View>
                 <View style={styles.aditionals}>
-                    <TouchableOpacity style={styles.forgotBtnArea}>
+                    <TouchableOpacity onPress={handleForgetButton} style={styles.forgotBtnArea}>
                         <Text style={styles.forgotBtnText}>
                             Esqueci minha senha
                         </Text>
                     </TouchableOpacity>
                 </View>
-                <TouchableOpacity style={styles.button}>
+                <TouchableOpacity onPress={handleLoginButton} style={styles.button}>
                     <Text style={styles.buttonText}>
                         Entrar
                     </Text>
