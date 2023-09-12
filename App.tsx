@@ -12,6 +12,8 @@ import {
 import { styles } from './styles'
 
 const App = () => {
+    const [emailField, setEmailField] = useState<string>('')
+    const [passwordField, setPasswordField] =useState<string>('')
     return (
         <ScrollView style={styles.scrollView}>
             <View style={styles.container}>
@@ -25,6 +27,11 @@ const App = () => {
                     </Text>
                     <TextInput style={styles.inputField}
                         placeholder="Digite seu email"
+                        placeholderTextColor="#999"
+                        value={emailField}
+                        onChangeText={t => setEmailField(t)}
+                        autoCapitalize="none"
+                        keyboardType="email-address"
                     />
 
                 </View>
@@ -34,7 +41,10 @@ const App = () => {
                     </Text>
                     <TextInput style={styles.inputField}
                         placeholder="Digite sua senha"
+                        placeholderTextColor="#999"
                         secureTextEntry
+                        value={passwordField}
+                        onChangeText={(text) =>{setPasswordField(text)}}
                     />
                 </View>
                 <View style={styles.aditionals}>
