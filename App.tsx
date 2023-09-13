@@ -1,5 +1,5 @@
 
-import React, { useState } from "react";
+import React, { useState, useSyncExternalStore } from "react";
 import {
     ScrollView,
     View,
@@ -10,17 +10,28 @@ import {
 } from 'react-native'
 
 import { styles } from './styles'
+import { isEmptyStatement } from "typescript";
 
 const App = () => {
-    const [emailField, setEmailField] = useState<string>('')
-    const [passwordField, setPasswordField] = useState<string>('')
+    const [emailField, setEmailField] = useState<string>(' ')
+    const [passwordField, setPasswordField] = useState<string>(' ')
+
+
+    const [status, setStatus] =  useState(' ')
+
     const handleForgetButton = () => {
 
     }
 
     const handleLoginButton = () => {
-        alert(emailField)
-        alert(passwordField)
+        if(emailField == ''){
+            alert('Email vazio')
+        }if(passwordField == ''){
+            alert('Senha vazia')
+        }else{
+            alert('Login concluído')
+        }
+        
     }
 
     const handleSignUpButton = () => {
@@ -59,6 +70,9 @@ const App = () => {
                         value={passwordField}
                         onChangeText={(text) => { setPasswordField(text) }}
                     />
+                    <Text>
+                        Credenciais inválidas
+                    </Text>
                 </View>
                 <View style={styles.aditionals}>
                     <TouchableOpacity onPress={handleForgetButton} style={styles.forgotBtnArea}>
